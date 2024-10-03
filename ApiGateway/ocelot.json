@@ -10,8 +10,15 @@
         {
           "Host": "localhost",
           "Port": 5001
+        },
+        {
+          "Host": "localhost",
+          "Port": 5005
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "UpstreamPathTemplate": "/products/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST" ]
     },
